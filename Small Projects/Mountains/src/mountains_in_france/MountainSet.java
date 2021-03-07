@@ -1,0 +1,63 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mountains_in_france;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Comparator;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class MountainSet {
+
+    private Set<Mountain> tree;
+
+    public MountainSet() {
+        tree = new TreeSet<>();
+    }
+
+    public void addMountain(Mountain m) {
+        this.tree.add(m);
+    }
+
+    @Override
+    public String toString() {
+        return tree.toString();
+    }
+
+    public Set<?> getMountainTree() {
+        return tree;
+    }
+
+    public Set<Mountain> sortByRange(Comparator comp) {
+        Set<Mountain> rangeTree = new TreeSet<>(comp);
+        rangeTree.addAll(tree);
+        return rangeTree;
+    }
+
+    public static void main(String[] args) {
+        MountainSet mSet = new MountainSet();
+
+        try (Scanner sc = new Scanner(new File("FranskeBjerge.csv"))) {
+            String line;
+            String[] items;
+            while (sc.hasNextLine()) {
+                line = sc.nextLine();
+                items = line.split(";");
+                mSet.addMountain(new Mountain(items[0], items[1], items[2],
+                        items[3], items[4], items[5]));
+            }
+
+            System.out.println(mSet.getMountainTree());
+        } catch (FileNotFoundException fnfe) {
+            fnfe.printStackTrace();
+        }
+
+        System.out.println("Sorted by range; ");
+        System.out.println(mSet.sortByRange(new MountainRangeComparator()));
+    }
+}

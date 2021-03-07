@@ -1,0 +1,4 @@
+.smartphonebg{
+ -fx-background-image: url('smartphoneframe.jpg');
+ -fx-background-size: 100% 100%;
+}

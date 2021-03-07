@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eksamenf15ver3.FXMLDocumentController">
+    <children>
+        <TabPane layoutX="164.0" layoutY="63.0" prefHeight="325.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Tjek Facade">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="34.0" layoutY="29.0" text="size:" />
+                        <TextField fx:id="sizeField" layoutX="62.0" layoutY="25.0" prefHeight="25.0" prefWidth="41.0" />
+                        <TextField fx:id="maxField" layoutX="154.0" layoutY="25.0" prefHeight="25.0" prefWidth="43.0" />
+                        <Button fx:id="fillArrayButton" layoutX="214.0" layoutY="25.0" mnemonicParsing="false" onAction="#checkFacadeHandler" text="fillArray(size, max)" />
+                        <TextArea fx:id="checkFacadeTextArea" layoutX="28.0" layoutY="58.0" prefHeight="127.0" prefWidth="439.0" wrapText="true" />
+                        <Label layoutX="107.0" layoutY="198.0" text="divisor:" />
+                        <TextField fx:id="divisorTextField" layoutX="154.0" layoutY="194.0" prefHeight="25.0" prefWidth="60.0" />
+                        <Button fx:id="sumDivButton" layoutX="251.0" layoutY="194.0" mnemonicParsing="false" onAction="#checkFacadeHandler" text="sumOfDivisors(divisor)" />
+                        <Label layoutX="126.0" layoutY="29.0" text="max:" />
+                        <Button fx:id="fillUniqueButton" layoutX="343.0" layoutY="25.0" mnemonicParsing="false" onAction="#checkFacadeHandler" text="fillUniqueArray(size, max)" />
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+            <Tab text="Vaskeri">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="wash6Button" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#laundryButtonAction" text="Vask max. 6 kg" />
+                        <TextField fx:id="price6wash" layoutX="12.0" layoutY="104.0" prefHeight="25.0" prefWidth="106.0" />
+                        <Button fx:id="wash12Button" layoutX="199.0" layoutY="10.0" mnemonicParsing="false" onAction="#laundryButtonAction" text="Vask max. 12 kg" />
+                        <Button fx:id="tumbleButton" layoutX="353.0" layoutY="10.0" mnemonicParsing="false" onAction="#laundryButtonAction" text="Tørre Tumbler" />
+                        <TextField fx:id="price12wash" layoutX="194.0" layoutY="104.0" prefHeight="25.0" prefWidth="112.0" />
+                        <TextField fx:id="tumblerMinutesField" layoutX="361.0" layoutY="58.0" prefHeight="25.0" prefWidth="88.0" />
+                        <TextField fx:id="priceTumbler" layoutX="361.0" layoutY="104.0" prefHeight="25.0" prefWidth="86.0" />
+                        <Label layoutX="361.0" layoutY="41.0" text="Minutter:" />
+                        <ChoiceBox fx:id="wash6Choice" layoutX="14.0" layoutY="58.0" prefHeight="25.0" prefWidth="102.0" />
+                        <ChoiceBox fx:id="wash12Choice" layoutX="197.0" layoutY="58.0" prefHeight="25.0" prefWidth="107.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

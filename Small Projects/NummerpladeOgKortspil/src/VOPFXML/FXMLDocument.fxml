@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VOPFXML.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="320.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Nummerplader">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="inputTextField" layoutX="50.0" layoutY="27.0" prefHeight="25.0" prefWidth="121.0" />
+                        <Button fx:id="checkButton" layoutX="193.0" layoutY="27.0" mnemonicParsing="false" onAction="#checkNumberplateHandler" text="Tjek" />
+                        <Label fx:id="resultLabel" layoutX="9.0" layoutY="86.0" prefHeight="17.0" prefWidth="300.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Spillekort">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="shuffleCardsButton" layoutX="37.0" layoutY="129.0" mnemonicParsing="false" onAction="#cardHandler" text="Bland" />
+                        <RadioButton fx:id="shuffle50" layoutX="109.0" layoutY="133.0" mnemonicParsing="false" text="50">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="shuffelGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="shuffle100" layoutX="170.0" layoutY="133.0" mnemonicParsing="false" text="100" toggleGroup="$shuffelGroup" />
+                        <RadioButton fx:id="shuffle250" layoutX="239.0" layoutY="133.0" mnemonicParsing="false" text="250" toggleGroup="$shuffelGroup" />
+                        <TextArea fx:id="cardTextArea" layoutX="6.0" layoutY="5.0" prefHeight="116.0" prefWidth="306.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

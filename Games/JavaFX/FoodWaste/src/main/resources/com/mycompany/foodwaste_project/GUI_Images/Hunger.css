@@ -1,0 +1,5 @@
+.hungerIcon{
+ -fx-background-image: url('Hunger.png');
+ -fx-background-size: 100% 100%;
+}
+

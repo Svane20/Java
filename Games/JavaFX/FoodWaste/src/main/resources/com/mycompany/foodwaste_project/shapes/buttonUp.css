@@ -1,0 +1,6 @@
+.first-button {
+    -fx-text-fill: black;
+    -fx-shape: "M 50,5 95,97.5 5,97.5 Z";
+    -fx-background-color: white;
+}
+

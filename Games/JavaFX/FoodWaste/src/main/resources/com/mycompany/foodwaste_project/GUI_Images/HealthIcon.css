@@ -1,0 +1,5 @@
+.healthIcon{
+ -fx-background-image: url('HealthIcon.png');
+ -fx-background-size: 100% 100%;
+}
+

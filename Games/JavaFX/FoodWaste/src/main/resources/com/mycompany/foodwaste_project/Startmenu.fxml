@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1540.0" styleClass="bodyb" stylesheets="@Startmenu_asset/background.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.foodwaste_project.StartmenuController">
+   <children>
+      <AnchorPane layoutX="398.0" layoutY="159.0" prefHeight="304.0" prefWidth="568.0">
+         <children>
+            <VBox layoutX="-308.0" prefHeight="128.0" prefWidth="1079.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to FoodWaste" wrappingWidth="659.5685729980469">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your name in the box to hear about the game">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="begin" layoutX="93.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="74.0" prefWidth="176.0" text="Begin">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <TextField fx:id="name" layoutX="93.0" layoutY="300.0" onAction="#setName" prefHeight="62.0" prefWidth="368.0" promptText="Enter First name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

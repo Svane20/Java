@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1540.0" styleClass="bodyi2" stylesheets="@Startmenu_asset/intro_2.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.foodwaste_project.Intro2Controller">
+   <children>
+      <Button fx:id="Next" layoutX="206.0" layoutY="739.0" mnemonicParsing="false" onAction="#startGame" prefHeight="38.0" prefWidth="96.0" text="Next">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextArea editable="false" layoutX="206.0" layoutY="34.0" prefHeight="691.0" prefWidth="1190.0" text="This is a game about food waste as you might have guessed&#10;&#10;Information:&#10;The rules in the game are: &#10;You have seven days to get the most points in the game without dying. &#10;You, the player, have a hunger bar, if the bar hits 0 you will take damage.&#10;If you take no action on the hunger bar, then eventually the health bar will hit 0 and you will die. &#10;Getting low on food (Under 30 hunger), will make your health bar gradually go down. &#10;&#10;The food in the game can spoil, if you don’t eat it fast enough or donate it. &#10;You can donate food to get extra points. &#10;You get random quest on your phone, that you must complete before the day is over. &#10;Be sure to check your phone when the game starts and whenever you have slept.  &#10;&#10;Walking between the rooms takes one hour, which means you have you manage the time you use. &#10;When the timer (Inside stats) hits 0, you will have to sleep &#10;If you're not sleeping inside your bedroom will result in, you sleep 10 hours longer and therefore have less time the next day.&#10;&#10;Purpose of the game&#10;Food can spoil so buying too much of it, can waste a lot of food. &#10;You will get a quest almost every day, that you must complete while keeping tabs on your food, so it doesn’t spoil. &#10;Completing quests and doing good will result in getting points that you will see when the game is over. &#10;&#10;The goal of the game is to manage your food consumption, which means you should avoid overeating, but at the same time must eat enough. &#10;&#10;&#10;&#10;Click &quot;Next&quot; to see the available commands in the game&#10;&#10;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

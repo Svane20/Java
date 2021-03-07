@@ -1,0 +1,5 @@
+.bodychar{
+ -fx-background-image: url('Character.jpg');
+ -fx-background-size: 100% 100%;
+}
+

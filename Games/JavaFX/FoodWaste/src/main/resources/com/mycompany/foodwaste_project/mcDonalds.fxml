@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1540.0" styleClass="bodym" stylesheets="@GUI_Images/mcd.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.foodwaste_project.McDonaldsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="688.4000244140625" minWidth="10.0" prefWidth="681.5999877929687" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="561.6000122070311" minWidth="10.0" prefWidth="421.59995117187486" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="681.6000366210938" minWidth="10.0" prefWidth="428.800048828125" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="outside" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#goOutside" prefHeight="65.0" prefWidth="125.0" styleClass="first-button" stylesheets="@shapes/buttonRight.css" text="Outside" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <GridPane.margin>
+            <Insets right="110.0" top="212.0" />
+         </GridPane.margin></Button>
+      <ImageView fitHeight="263.0" fitWidth="264.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <image>
+            <Image url="@GUI_Images/Character.jpg" />
+         </image>
+         <GridPane.margin>
+            <Insets right="200.0" />
+         </GridPane.margin>
+      </ImageView>
+      <VBox prefHeight="266.0" prefWidth="645.0">
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="579.0" style="-fx-background-color: gray;">
+               <children>
+                  <Button fx:id="statsButton" mnemonicParsing="false" onAction="#viewStats" text="Stats">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="smartphoneButton" mnemonicParsing="false" onAction="#openSmartphone" text="Phone">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="inventoryButton" mnemonicParsing="false" onAction="#openInventory" text="Inventory">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="roomInventoryButton" mnemonicParsing="false" onAction="#onActionRoomInventoryButton" text="Room Inventory">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="buttonSleep" mnemonicParsing="false" onAction="#sleep" text="Sleep">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="buyButton" mnemonicParsing="false" onAction="#onActionBuyButton" prefHeight="26.0" prefWidth="82.0" text="Buy food">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
