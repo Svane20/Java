@@ -1,2 +1,2 @@
 # Credits_System
-Credits management system for TV2
+Credits Management System
